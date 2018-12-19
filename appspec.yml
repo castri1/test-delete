@@ -1,0 +1,12 @@
+version: 0.0
+os: windows
+files:
+  - source: \
+    destination: C:\WTTApp
+hooks:
+  ApplicationStop:
+    - location: .\Remove.ps1
+      timeout: 30
+  ApplicationStart:
+    - location: .\Install.ps1
+      timeout: 300
