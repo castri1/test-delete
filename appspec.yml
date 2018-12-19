@@ -1,0 +1,9 @@
+version: 0.2
+os: windows
+files:
+  - source: \
+    destination: C:\Deployment
+hooks:
+  ApplicationStart:
+    - location: .\Install.ps1
+      timeout: 300
