@@ -1,3 +1,5 @@
+New-Item -ItemType Directory -Force -Path 'C:\Deployment'
+
 Set-Location 'C:\Deployment'
 
 #Restore nuget packages
