@@ -1,13 +1,4 @@
-$client_path = "C:\Deployment"
-$solution_path = "C:\Users\Daniel\Documents\Visual Studio 2017\Projects\WTT"
-$publish_path = "C:\Users\Daniel\Desktop\Delete\deployment"
-
-Set-Location $client_path
-
-& npm install
-& npm run build
-
-Set-Location $solution_path
+Set-Location 'C:\Deployment'
 
 #Restore nuget packages
 & dotnet.exe restore
