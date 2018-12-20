@@ -5,6 +5,8 @@ phases:
     commands:
       - dotnet restore
       - dotnet publish -c release -o 'C:\deployment' -f netcoreapp2.1 -r win-x64
+      - copy-item -Path './aws-windows-deployment-manifest.json' -Destination 'C:\deployment\'
+      - echo deployed
 artifacts:
   files:
     - C:\deployment\*
