@@ -1,8 +1,8 @@
 version: 0.0
 os: windows
 files:
-  - source: \
-    destination: C:\Deployment
+  - source: \deployment\*
+    destination: C:\inetpub\wwwroot
 hooks:
   ApplicationStart:
     - location: .\Install.ps1
